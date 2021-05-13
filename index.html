@@ -3,18 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Personal Portfolio - Rodrigo Pova</title>
+    <style>
+        @font-face {
+            font-family: 'gilroy-light';
+            src: url('gilroy-light-webfont.woff2') format('woff2'),
+            url('gilroy-light-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'gilroy-extrabold';
+            src: url('gilroy-extrabold-webfont.woff2') format('woff2'),
+            url('gilroy-extrabold-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body{
+            font-family: gilroy-light;
+            background-color: #E0FBFC;
+            color: #293241;
+        }
+        
+        .heading, .link {
+            color: #EE6C4D;
+        }
+
+        .hero {
+            height: fit-content;
+            background-color: #3D5A80;
+            background-image: linear-gradient(#293241, #3D5A80, #98C1D9);
+            padding: 30px 60px;
+            text-align: center;
+        }
+
+        .hero__heading {
+            text-align: center;
+            color: #EE6C4D;
+            font-size: 48px;
+        }
+
+        .hero__text {
+            font-size: 24px;
+            line-height: 42px;
+            color: #E0FBFC;
+        }
+
+        .hero__image {
+            border-radius: 18px;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Rodrigo de Moura Pova</h1>
-    <img id="profilepic" src="images/rodrigopova.jpeg" alt="Portrait of Rodrigo with a blurred background" width="300px">
-    <p id="description">
-        Hello, world!<br>
-        I'm an aspiring software developer based in <b>Rio de Janeiro, Brazil</b>.<br>
-        I also teach Chemistry 🧪 and play music 🎶.<br>
-        I'm a trumpet 🎺 player and arranger for <em>O Baile Todo</em> brass band.
-    </p>
-    <hr>
-    <h2 id="skills">Skills</h2>
+    <div class="hero">
+        <h1 class="hero__heading">Rodrigo de Moura Pova</h1>
+        <img class="hero__image" id="profilepic" src="images/rodrigopova.jpeg" alt="Portrait of Rodrigo with a blurred background" width="300px">
+        <p class="hero__text" id="description">
+            Hello, world!<br>
+            I'm an aspiring software developer based in <b>Rio de Janeiro, Brazil</b>.<br>
+            I also teach Chemistry 🧪 and play music 🎶.<br>
+            I'm a trumpet 🎺 player and arranger for <em>O Baile Todo</em> brass band.
+        </p>
+    </div>
+    <h2 class="heading" id="skills">Skills</h2>
     <ul>
         <li><em>26 years of experience in <strong>Life</strong></em>;</li>
         <li>2 hours of experience in <strong>HTML</strong>;</li>
@@ -23,19 +75,19 @@
         <li>8 weeks of experience in <strong>Python</strong>;</li>
     </ul>
     <hr>
-    <h2 id="inspirations">Inspirations</h2>
+    <h2 class="heading" id="inspirations">Inspirations</h2>
     <ul>
-        <li><a href="https://www.redgregory.com/" target="_blank">Red Gregory</a> for design and personal organization.</li>
-        <li><a href="https://twitter.com/snazzyq" target="_blank">Quinn Nelson</a> for tech tips and content creation.</li>
-        <li><a href="https://twitter.com/oatila" target="_blank">Átila Iamarino</a> for insights on life, health and science education.</li>
-        <li><a href="https://www.youtube.com/channel/UC8R8FRt1KcPiR-rtAflXmeg" target="_blank">Nahre Sol</a> for work ethic and creativity.</li>
+        <li><a class="link" href="https://www.redgregory.com/" target="_blank">Red Gregory</a> for design and personal organization.</li>
+        <li><a class="link" href="https://twitter.com/snazzyq" target="_blank">Quinn Nelson</a> for tech tips and content creation.</li>
+        <li><a class="link" href="https://twitter.com/oatila" target="_blank">Átila Iamarino</a> for insights on life, health and science education.</li>
+        <li><a class="link" href="https://www.youtube.com/channel/UC8R8FRt1KcPiR-rtAflXmeg" target="_blank">Nahre Sol</a> for work ethic and creativity.</li>
     </ul>
     <hr>
     <footer>
         <h2>Back to...</h2>
-        <a href="#profilepic">Personal Picture</a> | 
-        <a href="#skills">Skills</a> | 
-        <a href="#inspirations">Inspirations</a>
+        <a class="link" href="#profilepic">Personal Picture</a> | 
+        <a class="link" href="#skills">Skills</a> | 
+        <a class="link" href="#inspirations">Inspirations</a>
     </footer>
 
 
