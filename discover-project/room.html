@@ -7,6 +7,7 @@
     <title>Rocket.Q</title>
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/room.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -51,10 +52,11 @@
         <section id="questions">
           <h2 class="sr-only">Community questions</h2>
           <div class="questions">
+
             <div class="question-wrapper">
               <div class="question-content">
                 <div class="user">
-                  <img src="assets/avatar.svg" alt="User avatar" />
+                  <img src="assets/user.svg" alt="User avatar" />
                 </div>
                 <div class="question">
                   <p>Why did the chicken cross the road?</p>
@@ -71,9 +73,69 @@
                 </a>
               </div>
             </div>
+
+            <div class="question-wrapper">
+              <div class="question-content">
+                <div class="user">
+                  <img src="assets/user.svg" alt="User avatar" />
+                </div>
+                <div class="question">
+                  <p>What's the meaning of life?</p>
+                </div>
+              </div>
+              <div class="actions">
+                <a href="#" class="check">
+                  <img src="assets/check.svg" alt="Mark as read" />
+                  Mark as read
+                </a>
+                <a href="#" class="delete">
+                  <img src="assets/trash.svg" alt="Delete" />
+                  Delete
+                </a>
+              </div>
+            </div>
+
+            <div class="question-wrapper read">
+              <div class="question-content">
+                <div class="user">
+                  <img src="assets/user.svg" alt="User avatar" />
+                </div>
+                <div class="question">
+                  <p>What am I holding in my hand?</p>
+                </div>
+              </div>
+              <div class="actions">
+                <!-- <a href="#" class="check">
+                  <img src="assets/check.svg" alt="Mark as read" />
+                  Mark as read
+                </a> -->
+                <a href="#" class="delete">
+                  <img src="assets/trash.svg" alt="Delete" />
+                  Delete
+                </a>
+              </div>
+            </div>
+            
           </div>
         </section>
       </main>
     </div>
+
+    <div class="modal-wrapper active">
+      <div class="modal">
+        <h2>Delete Question</h2>
+        <p>Are you sure you want to delete this question?</p>
+
+        <form action="">
+          <label class="sr-only" for="password">Type the room administrator password</label>
+          <input id="password" type="password" name="password" placeholder="Password">
+          <div class="buttons">
+            <div class="button grey">Cancel</div>
+            <button class="red">Delete</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
   </body>
 </html>
